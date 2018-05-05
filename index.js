@@ -17,7 +17,7 @@ class Driver {
   };
   passengers(){
     return store.trips.filter(trip => {
-      return trip.passenger;
+      return trip.passenger();
     });
   };
 };
