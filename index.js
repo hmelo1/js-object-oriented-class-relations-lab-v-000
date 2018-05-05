@@ -45,4 +45,9 @@ class Trip{
       return driver.id === this.driverId;
     });
   };
+  passenger(){
+    return store.passengers.find(passenger =>{
+      return passenger.id === this.passengerId;
+    });
+  };
 };
