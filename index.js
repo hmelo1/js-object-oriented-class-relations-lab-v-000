@@ -35,7 +35,7 @@ class Passenger{
     });
   };
   drivers(){
-    return store.trips.filters(trip => {
+    return store.trips.map(trip => {
         return trip.driver();
     });
   };
