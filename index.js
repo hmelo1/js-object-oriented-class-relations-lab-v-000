@@ -12,7 +12,7 @@ class Driver {
   };
   trips(){
     return store.trips.filter(trip => {
-      return trip.driverId === this.is
+      return trip.driverId === this.id;
     })
   }
 };
